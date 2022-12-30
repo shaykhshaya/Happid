@@ -14,4 +14,7 @@
     <color name="input_layout">#0DFF7F5D</color>
     <color name="off_white">#F5F5F5</color>
     <color name="off_orange">#FFFFFBF3</color>
+    <color name="color_text_70">#B3020202</color>
+    <color name="hint_color">#66020202</color>
+    <color name="orange">#FF7F5D</color>
 </resources>

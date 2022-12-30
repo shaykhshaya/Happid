@@ -7,4 +7,10 @@
     <dimen name="btn_height">60dp</dimen>
     <dimen name="btn_margin_side">24dp</dimen>
     <dimen name="edit_corner_size">5dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_120dp">120dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="radius_button">5dp</dimen>
 </resources>

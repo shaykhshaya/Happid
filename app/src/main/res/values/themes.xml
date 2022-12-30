@@ -19,7 +19,9 @@
         <item name="android:statusBarColor">@color/white</item>
     </style>-->
 
-
+    <style name="hintAppearance" parent="@android:style/TextAppearance">
+        <item name="hintTextColor">@color/hint_color</item>
+    </style>
 
 
 
