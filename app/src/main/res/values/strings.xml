@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Happid</string>
+    <string name="splash_text">Find Nearest Local \n Market</string>
+    <string name="text_btn">Get Started</string>
+    <string name="text_landing"><![CDATA[O On-Time Departures. Pay just for your seat. No Refusal from our end. Spacious & Comfortable Seating. Female passengers safety standards. Onboard Refreshments. Cab Tracking through Maps]]></string>
+    <string name="request_otp">Request OTP</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="best_markitplac">Best Markitplac</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_gradient"
+    tools:context=".ui.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="135.31dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="248dp"
+        android:src="@drawable/ic_happid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88.89dp"
+        android:layout_marginBottom="105.37dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintBottom_toTopOf="@+id/img_logo"
+        app:layout_constraintEnd_toStartOf="@+id/img_three" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_two"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="33.54dp"
+        android:layout_marginBottom="0.37dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintBottom_toTopOf="@+id/img_logo"
+        app:layout_constraintEnd_toStartOf="@+id/img_one"
+        app:layout_constraintStart_toStartOf="@+id/img_seven" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_three"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="12.04dp"
+        android:layout_marginBottom="84.13dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintBottom_toTopOf="@+id/img_four"
+        app:layout_constraintStart_toEndOf="@+id/img_logo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_four"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35.54dp"
+        android:layout_marginBottom="94.12dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintBottom_toTopOf="@+id/img_five"
+        app:layout_constraintStart_toEndOf="@+id/img_logo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_five"
+        android:layout_width="@dimen/dp_55"
+        android:layout_height="@dimen/dp_55"
+        android:layout_marginStart="1.98dp"
+        android:layout_marginTop="36.87dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintStart_toEndOf="@+id/img_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_six"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="91.87dp"
+        android:layout_marginEnd="68.82dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintEnd_toStartOf="@+id/img_five"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_seven"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="128.25dp"
+        android:layout_marginEnd="81.46dp"
+        android:src="@drawable/ellipse_84"
+        app:layout_constraintEnd_toStartOf="@+id/img_six"
+        app:layout_constraintTop_toBottomOf="@+id/img_two" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54.63dp"
+        android:text="@string/splash_text"
+        android:textAlignment="center"
+        android:textColor="@color/splash_text_color"
+        android:textSize="24sp"
+        android:lineHeight="34sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:flow_verticalAlign="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

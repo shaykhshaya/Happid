@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="btn_height">60dp</dimen>
+    <dimen name="btn_margin_side">24dp</dimen>
+    <dimen name="edit_corner_size">5dp</dimen>
+</resources>
