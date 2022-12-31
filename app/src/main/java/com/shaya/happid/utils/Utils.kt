@@ -15,7 +15,7 @@ fun ImageView.loadCircleImageByUrl(context: Context, url: String?){
     Glide.with(context)
         .load(url)
         .circleCrop()
-        .placeholder(R.drawable.ic_img_error)
+        .placeholder(R.drawable.ellipse_84)
         .error(R.drawable.ellipse_84)
         .into(this)
 }
