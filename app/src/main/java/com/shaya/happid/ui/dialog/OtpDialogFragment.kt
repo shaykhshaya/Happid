@@ -9,52 +9,59 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.shaya.happid.databinding.FragmentOtpDialogBinding
-import com.shaya.happid.ui.activity.OtpActivity
+import com.shaya.happid.ui.activity.OtpVerifyActivity
+import com.shaya.happid.utils.OTP_DISPLAY_DURATION
+import com.shaya.happid.utils.Otp_keys
+import com.shaya.happid.utils.setRoundedWidth
 
-class OtpDialogFragment(val otp: String, val number:String) : DialogFragment() {
-private lateinit var binding:FragmentOtpDialogBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        Handler(Looper.getMainLooper()).postDelayed(
-            {
-                val intent = Intent(requireContext(), OtpActivity()::class.java)
-                intent.putExtra("trueOtp",otp)
-                intent.putExtra("mob",number)
-                startActivity(intent)
-            }, 2000)
-    }
+class OtpDialogFragment(private val otp: String, val mob: String) : DialogFragment() {
+    private lateinit var binding: FragmentOtpDialogBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    ): View {
         binding = FragmentOtpDialogBinding.inflate(layoutInflater)
         return binding.root
-
-
-
-
-        //return inflater.inflate(R.layout.fragment_otp_dialog, container, false)
-
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.code1.text = otp.toCharArray()[0].toString()
-        binding.code2.text = otp.toCharArray()[1].toString()
-        binding.code3.text = otp.toCharArray()[2].toString()
-        binding.code4.text = otp.toCharArray()[3].toString()
-
-
-
+        dialog?.setRoundedWidth()
+        showOTP()
+        navigateToOTPVerify()
     }
 
+    private fun showOTP() {
+        binding.apply {
+            val otpChars = otp.toCharArray()
+            for (index in otpChars.indices) {
+                when (index) {
+                    0 -> code1.text = otpChars[index].toString()
+                    1 -> code2.text = otpChars[index].toString()
+                    2 -> code3.text = otpChars[index].toString()
+                    3 -> code4.text = otpChars[index].toString()
+                }
+            }
+        }
+    }
 
+    private fun navigateToOTPVerify() {
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+                if (context == null){
+                    return@postDelayed
+                }
+                val intent = Intent(context, OtpVerifyActivity::class.java)
+                    .apply {
+                        putExtra(Otp_keys.OTP_KEY, otp)
+                        putExtra(Otp_keys.MOB_KEY, mob)
+                    }
+                startActivity(intent)
+            }, OTP_DISPLAY_DURATION
+        )
+    }
 
 
 }

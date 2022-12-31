@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_disabled">#EAE9E9</color>
     <color name="splash_text_color">#020202</color>
     <color name="btn_color">#5046BB</color>
     <color name="text_color_landing">#020202</color>
@@ -14,4 +15,7 @@
     <color name="input_layout">#0DFF7F5D</color>
     <color name="off_white">#F5F5F5</color>
     <color name="off_orange">#FFFFFBF3</color>
+    <color name="color_text_70">#B3020202</color>
+    <color name="hint_color">#66020202</color>
+    <color name="orange">#FF7F5D</color>
 </resources>
