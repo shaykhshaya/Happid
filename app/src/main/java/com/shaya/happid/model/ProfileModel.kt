@@ -1,7 +1,7 @@
 package com.shaya.happid.model
 
 data class ProfileModel(
-    val id: String,
+    val imgUrl: String,
     val firstName: String,
     val lastName: String,
     val phone: String,

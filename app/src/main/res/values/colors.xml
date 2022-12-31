@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_disabled">#EAE9E9</color>
     <color name="splash_text_color">#020202</color>
     <color name="btn_color">#5046BB</color>
     <color name="text_color_landing">#020202</color>

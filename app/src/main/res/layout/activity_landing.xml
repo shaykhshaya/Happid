@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="135.31dp"
-        android:layout_height="136dp"
+        android:layout_width="@dimen/dimen_dp136"
+        android:layout_height="@dimen/dimen_dp136"
         android:src="@drawable/ic_happid"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,10 +35,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
+                android:fontFamily="@font/inter_extrabold"
                 android:text="@string/best_markitplac"
                 android:textColor="@color/text_color_landing"
                 android:textSize="24sp"
-                android:fontFamily="@font/inter_extrabold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -50,12 +50,12 @@
                 android:layout_marginStart="23.5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="23.5dp"
+                android:fontFamily="@font/inter_medium"
+                android:lineHeight="24sp"
                 android:text="@string/text_landing"
                 android:textAlignment="center"
                 android:textColor="@color/text_color_landing"
-                android:fontFamily="@font/inter_medium"
                 android:textSize="14sp"
-                android:lineHeight="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txt_title" />
@@ -69,14 +69,14 @@
                 android:layout_marginEnd="@dimen/btn_margin_side"
                 android:layout_marginBottom="40dp"
                 android:backgroundTint="@color/btn_color"
+                android:fontFamily="@font/montserrat_regular"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:letterSpacing="0"
                 android:text="@string/text_btn"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="16sp"
-                android:fontFamily="@font/montserrat_regular"
-                android:letterSpacing="0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,21 +88,5 @@
 
     </androidx.cardview.widget.CardView>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 </androidx.constraintlayout.widget.ConstraintLayout>

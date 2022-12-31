@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Happid"
+        android:name=".MyApplication"
         tools:targetApi="31">
         <activity
             android:name=".ui.activity.SplashActivity"
@@ -29,13 +30,14 @@
         </activity>
         <activity
             android:name=".ui.activity.ProfileActivity"
-            android:exported="false">
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.activity.OtpActivity"
+            android:name=".ui.activity.OtpVerifyActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

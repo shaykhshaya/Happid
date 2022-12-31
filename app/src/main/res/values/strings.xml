@@ -9,4 +9,25 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="best_markitplac">Best Markitplac</string>
     <string name="text_login_bottom">By Creating Passcode You Agree With Our \n <font color='#FF7F5D'>Terms &amp; Conditions</font> And <font color='#FF7F5D'>Privacy Policy</font></string>
+    <string name="otp_resent">Don\'t Receive OTP? <font color='#FF7F5D'>Resend</font></string>
+    <string name="create_profile">Create Profile</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="hello_welcome_back_to_our_account">Hello, Welcome Back To Our Account</string>
+    <string name="login_with">Login With</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="enter_your_nverification_code">Enter Your \nVerification Code</string>
+    <string name="we_have_sent_the_code_verification_to_your_mobile_number">We Have Sent The Code Verification To Your Mobile Number</string>
+    <string name="set_profile">Set Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="phone">Phone</string>
+    <string name="pick_your_current_location">Pick Your Current Location</string>
+    <string name="or">Or</string>
+    <string name="post_code">Post Code</string>
+    <string name="select_post_code_or_address">Select Post Code Or Address</string>
+    <string name="your_confirmation_code_is_nbelow_enter_it_and_we_ll_help_nyou_get_signed_in">Your Confirmation Code Is\nBelow — Enter It And We\'ll Help \nYou Get Signed In.</string>
+    <string name="hint_phone">0000000000</string>
+    <!--
+        <string name="text_confimation">Your Confirmation Code Is Below — Enter It  And We'll Help \nYou Get Signed In.</string>
+    -->
 </resources>
